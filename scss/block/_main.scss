@@ -1,0 +1,70 @@
+.great-coffe {
+  background-image: url(/image/great-coffe.png);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 600px;
+  padding: 100px 86px;
+  @media (max-width: $desktop) {
+    width: 689px;
+    height: 500px;
+    background-position: center;
+    padding: 104px 233px 104px 58px;
+    margin-right: 0 !important;
+  }
+  @media (max-width: $tablet) {
+    width: 327px;
+    height: 500px;
+    background-position: center;
+    padding: 100px 24px;
+  }
+
+  h2 {
+    @include headings-2;
+    width: 493px;
+    margin-bottom: 32px;
+    color: #fefcf7;
+    @media (max-width: $desktop) {
+      font-size: 48px;
+      line-height: 48px;
+      width: 329px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: $tablet) {
+      max-width: 279px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  p {
+    @include paragraf;
+    margin: 0;
+    margin-bottom: 56px;
+    max-width: 445px;
+    color: #fefcf7;
+
+    @media (max-width: $desktop) {
+      max-width: 398px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: $tablet) {
+      max-width: 279px;
+    }
+  }
+  a {
+    background-color: #0e8784;
+    color: #fefcf7;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    &:hover {
+      background-color: #66d2cf;
+    }
+    @media (max-width: $tablet) {
+      margin: 0 31px;
+    }
+  }
+}

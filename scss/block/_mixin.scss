@@ -1,0 +1,40 @@
+@mixin flexBox {
+  display: flex;
+  gap: 20px;
+}
+
+@mixin headings($heading) {
+  @if $heading == h2 {
+    font-size: 22px;
+    color: green;
+    background-color: white;
+  } @else if $heading == h3 {
+    font-size: 20px;
+    color: yellow;
+    background-color: #000;
+  } @else if $heading == h4 {
+    font-size: 20px;
+    color: red;
+    background-color: beige;
+  } @else if $heading == h5 {
+    font-size: 20px;
+    color: blue;
+    background-color: yellowgreen;
+  } @else {
+    font-size: 20px;
+    color: blueviolet;
+    background-color: aquamarine;
+  }
+}
+@mixin headings-2 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  margin: 0;
+}
+@mixin paragraf {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
